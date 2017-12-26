@@ -1,21 +1,33 @@
-Instructions
-* Fork the repository
-* Create a Feature Branch
-* Implement a simple search function according to wireframes and UI (attached on github)
-* The search should use a public REST API of your choice using JavaScript
-* Search for title, return title (or something like that)
-* Display partial search results in a list beneath the search field
-* When hitting [ENTER] the selected search value should be saved with date/timestamp beneath the search box (as a search history)
-* The page should be responsive, so that if width of window is changed it should adapt
-* Nothing needs to be saved if the page is reloaded (i.e don’t have to use cookies/database etc)
-* Logo and search-icon is provided under /assets
-* We expect a total of 3 files - .html, .js and .css
-* Solutions built using frameworks such as flex-grid, bootstrap or similar will be discarded.
- 
-What we look at
-* HTML5 semantics, complexity of css3 solutions and js sanity.
-* General sanity check on structure and solution
- 
-Solve the task as far as you think is necessary.
- 
-When done push your branch and let us know it’s done, e.g. by a pull request.
+# Search API implementation for movie titles
+
+* URL used: http://www.omdbapi.com/?apikey=KEY&s={{QUERY}}
+
+* **solutions/** is the folder containing only the requested files
+
+* **assets/** is the folder containing the folders and structure I actually used. Main **difference** between the development environment is the **folder structure**, **search.html** and use of **search.less**
+
+* **LESS** was used to generate the **CSS** because doing it purely in CSS would be redundancy nightmare. The generated CSS is in the **solutions/** directory.
+
+* The JS file **search.js** contains all logic but ideally it would be structured in several files, but has been separated for **easy extraction* though but delivered as requested, in a single file.
+
+## Additional options
+* For full responsive layout relative to width according to the "specification", use the following url
+
+        /path/to/assets/search.html?max-font-size=false
+        
+    [ Direct link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html?max-font-size=false)
+
+    For unlimited scaling up and down when **window width changes**. 
+
+* Default is however with a limit on how big the scaling up can go which can become ridiculously big for big screens
+        
+        /path/to/assets/solution/search.html
+        
+   [ Direct link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html)
+        
+  so a **cap** has been introduced at **1440px** meaning the scaling up stops there. 
+  
+## Other  
+* No template engine was used, but the little html generated was done in JS using createElement
+* Nor jQuery, or Sizzle or the like was used, but create a j**o**Query function that mimics jQuery **$** function and implemented **find** for subselects from element.
+* Nothing was actually mentioned regarding the font, so the icons are not exacly rendered as in the UI. Knowing the font would have helped fix that. I'm sure it's a minor detail.   
