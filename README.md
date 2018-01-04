@@ -2,13 +2,13 @@
 
 * URL used: http://www.omdbapi.com/?apikey=KEY&s={{QUERY}}
 
-* **solutions/** is the folder containing only the requested files
+* **solution/** is the folder containing only the requested files
 
-* **assets/** is the folder containing the folders and structure I actually used. Main **difference** between the development environment is the **folder structure**, **search.html** and use of **search.less**
+* **assets/** is the folder containing the folders and structure I actually used in development. Main **difference** between the development environment is the use of a different **file structure**, use of **search.less**, and small difference in **search.html**. 
 
-* **LESS** was used to generate the **CSS** because doing it purely in CSS would be redundancy nightmare. The generated CSS is in the **solutions/** directory.
+* **Less** was used to generate the **CSS** because doing it purely in CSS would be redundancy nightmare. The generated CSS is in the **solutions/** directory.
 
-* The JS file **search.js** contains all logic but ideally it would be structured in several files, but has been separated for **easy extraction* though but delivered as requested, in a single file.
+* The JS file **search.js** contains all JS code but ideally that code would be structured in several files, but has been structured in search.js in a way to allow for easy extraction but has been delivered as requested, in one single file.
 
 ## Additional options
 * Default includes a limit on how big the scaling up can go which can become ridiculously big for big screens
@@ -28,6 +28,6 @@
     For **unlimited scaling up & down** when **window width changes**. 
   
 ## Other  
-* No template engine was used, but the little html generated was done in JS using createElement
-* Nor jQuery, or Sizzle or the like was used, but create a j**o**Query function that mimics jQuery **$** function and implemented **find** for subselects from element.
-* Nothing was actually mentioned regarding the font, so the icons are not exacly rendered as in the UI. Knowing the font would have helped fix that. I'm sure it's a minor detail.   
+* No template engine was used, but the little html generated was created using JS and document.createElement. 
+* No jQuery, or Sizzle or the like was used, but created a j**o**Query function that mimics jQuery **$** function and implemented a **find** function for subselects from element.
+* Nothing was actually mentioned regarding the font, so the icons are not exacly rendered as in the UI. Knowing the font would have helped fix that. I'm sure it's a minor detail. The SVG files was kept and not bundled in the CSS or HTML. 
