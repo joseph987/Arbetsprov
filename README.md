@@ -11,19 +11,19 @@
 * The JS file **search.js** contains all logic but ideally it would be structured in several files, but has been separated for **easy extraction* though but delivered as requested, in a single file.
 
 ## Additional options
-* For full responsive layout relative to width according to the "specification", use the following url
+* For fully responsive layout relative to width according to the "specification", use the following url
 
-        /path/to/assets/search.html?max-font-size=false
+        ../path/to/solution/search.html?max-font-size=false
         
-    [ Direct link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html?max-font-size=false)
+    [ Live link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html?max-font-size=false)
 
     For unlimited scaling up and down when **window width changes**. 
 
 * Default is however with a limit on how big the scaling up can go which can become ridiculously big for big screens
         
-        /path/to/assets/solution/search.html
+        ../path/to/solution/search.html?max-font-size=false
         
-   [ Direct link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html)
+   [ Live link (Click me!) ](http://rawgit.com/joseph987/Arbetsprov/joseph-feature-branch/solution/search.html)
         
   so a **cap** has been introduced at **1440px** meaning the scaling up stops there. 
   
