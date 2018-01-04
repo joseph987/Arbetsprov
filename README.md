@@ -30,4 +30,4 @@
 ## Other  
 * No template engine was used, but the little html generated was created using JS and document.createElement. 
 * No jQuery, or Sizzle or the like was used, but created a j**o**Query function that mimics jQuery **$** function and implemented a **find** function for subselects from element.
-* Nothing was actually mentioned regarding the font, so the icons are not exacly rendered as in the UI. Knowing the font would have helped fix that. I'm sure it's a minor detail. The SVG files was kept and not bundled in the CSS or HTML. 
+* Nothing was actually mentioned regarding the font, so the icons are not exacly rendered as in the UI. Knowing the font would have helped fix that. I'm sure it's a minor detail. The SVG files was kept and not bundled in the CSS, JS or HTML. 
